@@ -14,6 +14,7 @@ public class BaseActivity extends AppCompatActivity {
     public void showCustomToast(final String message) {
         Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
     }
+
     public void showProgressDialog() {
         if (mProgressDialog == null) {
             mProgressDialog = new ProgressDialog(this);
@@ -23,11 +24,13 @@ public class BaseActivity extends AppCompatActivity {
 
         mProgressDialog.show();
     }
+
     public void hideProgressDialog() {
         if (mProgressDialog != null && mProgressDialog.isShowing()) {
             mProgressDialog.dismiss();
         }
     }
+
     @Override
     public void onStop() {
         super.onStop();

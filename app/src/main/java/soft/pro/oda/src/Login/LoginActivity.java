@@ -15,10 +15,11 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import soft.pro.oda.R;
+import soft.pro.oda.src.BaseActivity;
 import soft.pro.oda.src.Signup.SignupActivity;
 import soft.pro.oda.src.main.MainActivity;
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends BaseActivity {
 
     EditText mId;
     EditText mPw;
